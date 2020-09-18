@@ -1,0 +1,38 @@
+@import "../../assets/styles/variables/";
+
+.row-data {
+  border-bottom: 10px solid $clr-base;
+  > td {
+    padding: 14px;
+
+    > .row-status {
+      width: 90px;
+      height: 26px;
+      margin: auto;
+      border-collapse: collapse;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.8em;
+      text-align: center;
+      color: white;
+    }
+
+    > .-green {
+      background-color: $clr-sucess;
+    }
+
+    > .-yellow {
+      background-color: $clr-waiting;
+    }
+
+    > .-red {
+      background-color: $clr-unsuccess;
+    }
+  }
+
+  > .-center {
+    text-align: center;
+  }
+}

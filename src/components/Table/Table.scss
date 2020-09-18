@@ -1,0 +1,11 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 20px;
+
+  > tbody {
+    border-collapse: collapse;
+    border-style: hidden;
+    background-color: white;
+  }
+}

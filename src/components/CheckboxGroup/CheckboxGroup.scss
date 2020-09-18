@@ -1,0 +1,33 @@
+.checkbox-group {
+  display: flex;
+  align-items: center;
+
+  > label {
+    font-weight: bold;
+  }
+
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+    > input {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      margin-right: 10px;
+      border-radius: 3px;
+      border: none;
+      background-image: url("../../assets/icons/checkbox.svg");
+      outline: none;
+      appearance: none;
+      cursor: pointer;
+    }
+
+    .-checked {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("../../assets/icons/checkbox_active.svg");
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.header-table {
+  > tr {
+    .header {
+      text-align: left;
+      padding: 14px;
+
+      > .header-container {
+        > .header-sortable {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          > label {
+            margin-right: 10px;
+          }
+          > .sort-icon {
+            width: 14px;
+            border: none;
+            outline: none;
+            background-repeat: no-repeat;
+            background-image: url("../../assets/icons/sort_line_icon.svg");
+            cursor: pointer;
+          }
+
+          > .-ascending {
+            width: 14px;
+            height: 9px;
+            background-image: url("../../assets/icons/sort_ascending_icon.svg");
+          }
+
+          > .-descending {
+            width: 14px;
+            height: 9px;
+            background-image: url("../../assets/icons/sort_descending_icon.svg");
+          }
+        }
+        > .-center {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

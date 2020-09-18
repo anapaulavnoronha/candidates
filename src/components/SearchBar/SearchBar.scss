@@ -1,0 +1,16 @@
+@import "../../assets/styles/variables/";
+
+.search-bar {
+  width: 500px;
+  height: 40px;
+  padding-left: 14px;
+  padding-right: 14px;
+  border: 1px solid $clr-base;
+  border-radius: 5px;
+  background-image: url("../../assets/icons/search_icon.svg");
+  background-repeat: no-repeat;
+  background-position: 470px;
+  background-color: white;
+  outline: none;
+  box-sizing: border-box;
+}
