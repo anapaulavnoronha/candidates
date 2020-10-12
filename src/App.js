@@ -38,7 +38,7 @@ const App = ({ data, status, fetchCandidates }) => {
       statusArray.forEach(status => {
         setPassingFilters(prevState => ({
           ...prevState,
-          status: { [status]: true }
+          status: { ...prevState.status, [status]: true }
         }));
       });
     }
