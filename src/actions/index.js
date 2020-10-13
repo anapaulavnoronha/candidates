@@ -10,10 +10,6 @@ export function receiveCandidates(json) {
   };
 }
 
-// function fetchCandidatesJson() {
-//   return fetch("http://personio-fe-test.herokuapp.com/api/v1/candidates").then(response => response.json());
-// }
-
 function fetchCandidatesJson() {
   return fetch("/candidates").then(response => response.json());
 }
