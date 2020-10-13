@@ -13,6 +13,8 @@ import "./App.scss";
 const App = ({ data, status, fetchCandidates }) => {
   let history = useHistory();
 
+  console.log(data);
+
   const [initialCandidates, setInitialCandidates] = useState(data);
   const [passingFilters, setPassingFilters] = useState({
     search: { inputTerm: "" },
@@ -133,7 +135,7 @@ const App = ({ data, status, fetchCandidates }) => {
 
 const mapStateToProps = state => {
   return {
-    data: state.getCandidates.candidates.data,
+    data: state.getCandidates.candidates,
     status: state.getCandidates.status
   };
 };
