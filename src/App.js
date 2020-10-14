@@ -13,8 +13,6 @@ import "./App.scss";
 const App = ({ data, status, fetchCandidates }) => {
   let history = useHistory();
 
-  console.log(data);
-
   const [initialCandidates, setInitialCandidates] = useState(data);
   const [passingFilters, setPassingFilters] = useState({
     search: { inputTerm: "" },
